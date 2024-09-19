@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biuro Podróży</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2e1e1;
+        }
+
+        .container {
+            width: 900px;
+            margin: 20px auto;
+            background-color: #d5a5a5;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        h1 {
+            color: white;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .promocje, .kontakt {
+            width: 25%;
+            background-color: #f7c2c2;
+            padding: 10px;
+            position: relative;
+            top: 0;
+            text-align: left;
+        }
+
+        .promocje {
+            float: left;
+        }
+
+        .kontakt {
+            float: right;
+        }
+
+        .promocje h2, .kontakt h2 {
+            font-size: 28px;
+            color: darkred;
+            text-align: center;
+        }
+
+        .promocje p, .kontakt p {
+            font-size: 20px;
+            margin: 5px 0;
+        }
+
+        .kontakt a {
+            color: blue;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .content {
+            margin: 0 auto;
+            clear: both;
+            padding: 20px;
+        }
+
+        .heading {
+            font-size: 28px;
+            color: darkred;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border: 2px solid #ccc;
+        }
+
+        .previous-trips {
+            text-align: left;
+            background-color: #f7c2c2;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .previous-trips p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        footer {
+            background-color: #b57b7b;
+            padding: 10px;
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BIURO PODRÓŻY</h1>
+
+        <div class="promocje">
+            <h2>Promocje</h2>
+            <p>Warszawa od 600 zł zniżka 50% przedtem 900</p>
+            <p>Wenecja od 1200 zł zniżka 20% przedtem 1440</p>
+            <p>Paryż od 1200 zł zniżka 40% przedtem 1680</p>
+        </div>
+
+        <div class="kontakt">
+            <h2>Kontakt</h2>
+            <a href="#">napisz do nas</a>
+            <p>telefon: +48 123-123-123-123</p>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="content">
+            <h2 class="heading">W tym roku jedziemy do...</h2>
+            <div class="gallery">
+                <img src="image1.jpg" alt="Zdjęcie 1">
+                <img src="image2.jpg" alt="Zdjęcie 2">
+                <img src="image3.jpg" alt="Zdjęcie 3">
+                <img src="image4.jpg" alt="Zdjęcie 4">
+                <img src="image5.jpg" alt="Zdjęcie 5">
+                <img src="image6.jpg" alt="Zdjęcie 6">
+                <img src="image7.jpg" alt="Zdjęcie 7">
+                <img src="image8.jpg" alt="Zdjęcie 8">
+            </div>
+
+            <h2 class="heading">W poprzednich latach byliśmy...</h2>
+            <div class="previous-trips">
+                <p>I. Dnia 2019-07-14 polecieliśmy do Francji i do Paryża</p>
+                <p>II. Dnia 2019-07-14 polecieliśmy do Hiszpanii i do Barcelony</p>
+                <p>III. Dnia 2019-08-14 pojechaliśmy do warszawy </p>
+            </div>
+        </div>
+
+        
+    </div>
+</body>
+</html>
