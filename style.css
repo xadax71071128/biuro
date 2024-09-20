@@ -1,82 +1,52 @@
-body {
-  background-color: #f0e6f0;
-  font-family: sans-serif;
-}
-
-.container {
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
-}
-
-.section {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
+* {
+  font-family: Georgia;
   text-align: center;
-  font-size: 2em;
-  margin-bottom: 10px;
 }
 
-h2 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
+header, footer {
+  background-color: #BA6B6C;
+  color: white;
+  padding: 7px;
 }
 
-h3 {
-  font-size: 1.2em;
-  margin-bottom: 10px;
+aside {
+  background-color: #EF9A9A;
+  width: 20%;
+  height: 500px;
 }
 
-p {
-  font-size: 1em;
-  line-height: 1.5;
-  margin-bottom: 10px;
+main {
+  background-color: MistyRose;
+  width: 60%;
+  height: 500px;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+section {
+  background-color: MistyRose;
+  padding: 50px;
 }
 
-li {
-  margin-bottom: 5px;
+ol {
+  list-style-type: upper-roman;
 }
 
-a {
-  color: #007bff;
-  text-decoration: none;
+ol li {
+  text-align: left;
 }
 
-a:hover {
-  text-decoration: underline;
+h2:first-letter {
+  font-size: 170%;
+  color: Maroon;
 }
 
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+table {
+  margin: auto;
+  width: 80%;
+  border: 1px solid Maroon;
 }
 
-.image {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-.footer {
-  text-align: center;
-  padding: 20px;
-  margin-top: 20px;
-  background-color: #f0e6f0;
-  border-radius: 10px;
-}
-
-.gallery img  {
-  margin: 10px 0;
+img {
+  height: 120px;
+  margin: 7px;
+  box-shadow: 7px 7px 7px DimGray;
 }
