@@ -1,125 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
-  <title>Biuro Podróży</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #F0F0F0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biuro Podróży</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f8f8f8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-    header {
-      background-color: #FF69B4;
-      color: white;
-      padding: 10px 0;
-      text-align: center;
-    }
+        header {
+            background-color: #e9967a;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            width: 100%;
+        }
 
-    main {
-      display: flex;
-      justify-content: space-around;
-      padding: 20px;
-    }
+        h1 {
+            margin: 0;
+        }
 
-    section {
-      background-color: white;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      width: 30%;
-      max-width: 350px;
-    }
+        section {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 1rem 0;
+            padding: 1rem;
+            width: 80%;
+            max-width: 800px;
+        }
 
-    .image-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 10px;
-    }
+        h2 {
+            color: #e9967a;
+        }
 
-    img {
-      width: 100%;
-      height: auto;
-      border-radius: 5px;
-    }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 1rem;
+        }
 
-    .promotions {
-      margin-bottom: 20px;
-    }
+        .gallery img {
+            width: 32%;
+            height: auto;
+            border-radius: 8px;
+        }
 
-    .promotions ul {
-      list-style: none;
-      padding: 0;
-    }
+        .promocje {
+            display: flex;
+            flex-direction: column;
+        }
 
-    .promotions li {
-      margin-bottom: 5px;
-    }
+        .promocje ul {
+            list-style: none;
+            padding: 0;
+        }
 
-    .promotions li span {
-      float: right;
-    }
+        .promocje li {
+            margin-bottom: 0.5rem;
+        }
 
-    footer {
-      background-color: #FF69B4;
-      color: white;
-      text-align: center;
-      padding: 10px 0;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
+        .kontakt {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .kontakt a {
+            color: #e9967a;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #e9967a;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>BIURO PODRÓŻY</h1>
-  </header>
-
-  <main>
-    <section>
-      <h2>Promocje</h2>
-      <div class="promotions">
-        <ul>
-          <li>Warszawa <span>od 600 zł</span></li>
-          <li>Wenecja <span>od 1200 zł</span></li>
-          <li>Paryż <span>od 1200 zł</span></li>
-        </ul>
-      </div>
-    </section>
+    <header>
+        <h1>BIURO PODRÓŻY</h1>
+    </header>
 
     <section>
-      <h2>W tym roku jedziemy do...</h2>
-      <div class="image-grid">
-        <img src="images/barcelona.jpg" alt="Barcelona">
-        <img src="images/berlin.jpg" alt="Berlin">
-        <img src="images/budapest.jpg" alt="Budapeszt">
-        <img src="images/london.jpg" alt="Londyn">
-        <img src="images/moscow.jpg" alt="Moskwa">
-        <img src="images/new_york.jpg" alt="Nowy Jork">
-        <img src="images/paris.jpg" alt="Paryż">
-        <img src="images/prague.jpg" alt="Praga">
-        <img src="images/venice.jpg" alt="Wenecja">
-      </div>
-      <p>W poprzednich latach byliśmy...</p>
-      <ul>
-        <div class="previous-trips">
-            <p>I. Dnia 2019-07-14 polecieliśmy do Francji i do Paryża</p>
-            <p>II. Dnia 2019-07-14 polecieliśmy do Hiszpanii i do Barcelony</p>
-            <p>III. Dnia 2019-08-14 polecieliśmy do warszawy </p>
+        <h2>Promocje</h2>
+        <div class="promocje">
+            <ul>
+                <li>Warszawa od 600 zł</li>
+                <li>Wenecja od 1200 zł</li>
+                <li>Paryż od 1200 zł</li>
+            </ul>
         </div>
-      </ul>
     </section>
 
     <section>
-      <h2>Kontakt</h2>
-      <p><a href="mailto:info@biuropodrozy.com">napisz do nas</a></p>
-      <p>telefon: 444555666</p>
+        <h2>W tym roku jedziemy do...</h2>
+        <div class="gallery">
+            
+        </div>
     </section>
-  </main>
 
-  <footer>
-    <p>Stronę wykonał: 00000000000</p>
-  </footer>
+    <section>
+        <h2>W poprzednich latach byliśmy...</h2>
+        <p>I. Dnia 2019-07-14 pojechaliśmy do Francji i do Paryża</p>
+        <p>II. Dnia 2019-07-14 pojechaliśmy do Hiszpanii i do Barcelona</p>
+        <p>III. Dnia 2019-08-14 pojechaliśmy do wielkiej brytanii</p>
+    </section>
+
+    <section>
+        <h2>Kontakt</h2>
+        <div class="kontakt">
+            <a href="#">napisz do nas</a>
+            <p>telefon: 111-111-111-111</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Stronę wykonał: Dominik Damaszke</p>
+    </footer>
 </body>
 </html>
