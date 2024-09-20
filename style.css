@@ -76,3 +76,7 @@ a:hover {
   background-color: #f0e6f0;
   border-radius: 10px;
 }
+
+.gallery img  {
+  margin: 10px 0;
+}
